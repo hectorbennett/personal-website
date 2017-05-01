@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Hector Bennett | Projects
+{% endblock %}
+
+{% block nav-buttons %}
+	<li><a href="/">Home</a></li>
+	<li class="active"><a href="/projects">Projects</a></li>
+{% endblock %}
+
+{% block jumbotron %}
+	<h1>Projects</h1>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Slimey Soccer</h2>
+				<p>Slimey Soccer is a single player or two player 2-D soccer game made with godot, inspired by the old slime java games that were popular in the early 2000s.</p>
+				<p>It is available to play on windows, mac and linux and the source is available on <a href="https://github.com/hectorbennett/slimey-soccer">github</a>.</p>
+			</div>	
+			<div class="col-sm-8">
+				<img src="/static/img/slimey-soccer-screenshot.jpg" class="img-responsive" class="img-thumbnail" alt="Responsive image">
+			</div>
+			<div class="col-sm-12">
+				<p>
+					Download links: 
+					<button type="button" class="btn">Windows</button>
+					<button type="button" class="btn">Mac</button>
+					<button type="button" class="btn">Linux</button>
+				</p>
+			</div>
+		</div>	
+	</div>	
+{% endblock %}
